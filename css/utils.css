@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+*::selection{
+    background-color: rgb(79, 155, 225);
+    color: rgb(0, 109, 24);
+    text-shadow: 4px 4px 5px black;
+}
+
+/*All css variables*/
+body{
+    --font-normal: 'PT Sans', sans-serif;
+    --font-heading: 'Josefin Sans', sans-serif;
+    --font-different: 'Pacifico', cursive;
+    --color-light: white;
+    --one: 0.3em;
+    --two: 0.5em;
+    --three: 1em;
+    --four: 1.3em;
+    --five: 1.5em;
+}
+
+/*Default properties for some tags*/
+p,
+span,
+li,
+a{
+    font-family: var(--font-normal);
+    font-size: medium;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: var(--font-heading);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+
+/*Flex box*/
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+/*Text and font*/
+.text-center{
+    text-align: center;
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+.font-heading{
+    font-family: var(--font-heading);
+}
+
+.font-different{
+    font-family: var(--font-different);
+}
+
+.font-md{
+    font-size: 1.3rem;
+}
+
+.font-lg{
+    font-size: 2rem;
+}
+
+
+/*Margin and padding*/
+.px-1{
+    padding-left: var(--one);
+    padding-right: var(--one);
+}
+
+.px-2{
+    padding-left: var(--two);
+    padding-right: var(--two);
+}
+
+.px-3{
+    padding-left: var(--three);
+    padding-right: var(--three);
+}
+
+.px-4{
+    padding-left: var(--four);
+    padding-right: var(--four);
+}
+
+.px-5{
+    padding-left: var(--five);
+    padding-right: var(--five);
+}
+
+.py-1{
+    padding-top: var(--one);
+    padding-bottom: var(--one);
+}
+
+.py-2{
+    padding-top: var(--two);
+    padding-bottom: var(--two);
+}
+
+.py-3{
+    padding-top: var(--three);
+    padding-bottom: var(--three);
+}
+
+.py-4{
+    padding-top: var(--four);
+    padding-bottom: var(--four);
+}
+
+.py-5{
+    padding-top: var(--five);
+    padding-bottom: var(--five);
+}
+
+.mx-1{
+    padding-left: var(--one);
+    padding-right: var(--one);
+}
+
+.mx-2{
+    padding-left: var(--two);
+    padding-right: var(--two);
+}
+
+.mx-3{
+    padding-left: var(--three);
+    padding-right: var(--three);
+}
+
+.mx-4{
+    padding-left: var(--four);
+    padding-right: var(--four);
+}
+
+.mx-5{
+    padding-left: var(--five);
+    padding-right: var(--five);
+}
+
+.my-1{
+    padding-top: var(--one);
+    padding-bottom: var(--one);
+}
+
+.my-2{
+    padding-top: var(--two);
+    padding-bottom: var(--two);
+}
+
+.my-3{
+    padding-top: var(--three);
+    padding-bottom: var(--three);
+}
+
+.my-4{
+    padding-top: var(--four);
+    padding-bottom: var(--four);
+}
+
+.my-5{
+    padding-top: var(--five);
+    padding-bottom: var(--five);
+}
