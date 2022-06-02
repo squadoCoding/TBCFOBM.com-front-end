@@ -17,9 +17,12 @@ nav {
 }
 
 .logo img{
-    width: 4rem;
-    max-width: 40px;
+    width: 40px;
     border-radius: 100%;
+}
+
+.logo span{
+    font-size: 20px;
 }
 
 #nav-main {
@@ -31,7 +34,7 @@ nav {
     overflow-y: scroll;
     transition-property: left;
     transition-duration: 0.3s;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 #nav-main::-webkit-scrollbar {
@@ -48,12 +51,16 @@ nav {
     background: linear-gradient(var(--color-primary), var(--color-dark));
 }
 
+#nav-main .logo{
+    margin-left: 10px;
+}
+
 #closeNav {
     color: var(--color-primary);
     width: 20px;
     cursor: pointer;
     margin-right: 0.5rem;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 #nav-main ul{
@@ -67,7 +74,8 @@ nav {
 
 #nav-main ul li a {
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 15px 20px;
+    font-size: 20px;
 }
 
 #nav-main ul li a:hover {

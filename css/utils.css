@@ -135,18 +135,18 @@ h4{
 /* Buttons */
 .btn-primary{
     color: var(--color-light);
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     padding: 0.8rem 0.5rem;
     border-radius: 5px;
     border: none;
     transition-property: all;
     transition-duration: 0.3s;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-primary);
 }
 
 .btn-primary:hover{
     background-color: var(--color-light);
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 
