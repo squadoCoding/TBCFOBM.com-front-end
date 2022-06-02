@@ -1,21 +1,24 @@
+body{
+    overflow-x: hidden;
+}
+
 header {
     position: sticky;
     top: 0;
 }
 
 nav {
-    --color-dark: rgb(19, 0, 27);
-    --color-primary: rgb(9, 82, 160);
-    --color-secondary: rgb(188, 79, 238);
     background-color: var(--color-dark);
+    padding: 10px 10px;
 }
 
 .logo {
     text-decoration: none;
 }
 
-.logo img {
-    width: 40px;
+.logo img{
+    width: 4rem;
+    max-width: 40px;
     border-radius: 100%;
 }
 
@@ -28,6 +31,7 @@ nav {
     overflow-y: scroll;
     transition-property: left;
     transition-duration: 0.3s;
+    padding: 10px;
 }
 
 #nav-main::-webkit-scrollbar {
@@ -41,18 +45,19 @@ nav {
 }
 
 #nav-main::-webkit-scrollbar-thumb {
-    background: linear-gradient(var(--color-primary), var(--color-secondary));
-}
-
-#nav-main .logo {
-    margin-bottom: var(--five);
+    background: linear-gradient(var(--color-primary), var(--color-dark));
 }
 
 #closeNav {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     width: 20px;
     cursor: pointer;
     margin-right: 0.5rem;
+    margin-left: 15px;
+}
+
+#nav-main ul{
+    margin-top: var(--five);
 }
 
 #nav-main ul li {
@@ -62,11 +67,12 @@ nav {
 
 #nav-main ul li a {
     text-decoration: none;
+    padding: 10px 15px;
 }
 
 #nav-main ul li a:hover {
     color: var(--color-dark);
-    background: linear-gradient(var(--color-primary), var(--color-secondary));
+    background: linear-gradient(var(--color-primary), var(--color-dark));
 }
 
 
@@ -76,7 +82,7 @@ nav {
 }
 
 #burger {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     padding: 3px 5px;
     border-radius: 3px;
     cursor: pointer;
@@ -88,5 +94,5 @@ nav {
     height: 3px;
     border-radius: 2px;
     margin: 4px 0px;
-    background-color: var(--color-primary);
+    background-color: var(--color-dark);
 }

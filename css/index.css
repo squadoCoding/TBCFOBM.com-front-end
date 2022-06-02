@@ -1,0 +1,56 @@
+@keyframes slide{
+    0%{
+        background-image: url("/img/home-slider-1.jpg");
+    }
+    
+    35%{
+        background-image: url("/img/home-slider-2.jpg");
+    }
+    
+    75%{
+        background-image: url("/img/home-slider-3.jpg");
+    }
+}
+
+body{
+    background-color: var(--color-dark-mid);
+}
+
+#home{
+    width: 100vw;
+    height: 25rem; 
+    background: no-repeat center;
+    background-image: url("/img/home-slider-1.jpg");
+    background-size: cover;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#home-content{
+    background-color: rgba(45, 45, 45, 0.587);
+    padding: 25px 15px;
+}
+
+#home-content h1{
+    margin-bottom: 15px;
+}
+
+#home-content p{
+    margin-bottom: 15px;
+}
+
+#home-content div{
+    gap: 10px;
+}
+
+@media screen and (max-width: 442px) {
+    #home{
+        height: auto;
+    }
+
+    #home-content{
+        background-color: transparent;
+    }
+}
