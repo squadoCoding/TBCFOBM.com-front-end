@@ -6,10 +6,10 @@
 }
 
 *::selection{
-    background-color: rgb(79, 155, 225);
-    color: rgb(231, 19, 15);
-    text-shadow: 2px 3px 5px black;
+    background-color: #009662;
+    color: rgb(123, 255, 123);
 }
+
 
 /*All css variables*/
 body{
@@ -18,28 +18,26 @@ body{
     --font-different: 'Pacifico', cursive;
     --color-light: white;
     --color-dark: rgb(1, 26, 54);
-    --color-dark-mid: rgb(36, 35, 35);
+    --color-body-bg: rgb(255, 255, 255);
     --color-primary: rgb(133, 45, 222);
     --color-secondary: rgb(241, 84, 84);
-    --one: 0.3em;
-    --two: 0.5em;
-    --three: 1em;
-    --four: 1.3em;
-    --five: 1.5em;
 }
 
 /*Default properties for some tags*/
+body{
+    background-color: var(--color-body-bg);
+}
+
 p,
 span,
 li,
 a{
     font-family: var(--font-normal);
-    font-size: medium;
     font-weight: 500;
 }
 
 p{
-    color: rgb(108, 243, 186);
+    color: rgb(243, 243, 82);
 }
 
 h1,
@@ -69,6 +67,10 @@ h4{
     cursor: pointer;
 }
 
+.text-heading{
+    color: var(--color-secondary);
+}
+
 
 /*Flex box*/
 .flex{
@@ -96,6 +98,11 @@ h4{
     justify-content: end;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+
 /*Text and font*/
 .text-center{
     text-align: center;
@@ -111,14 +118,6 @@ h4{
 
 .font-different{
     font-family: var(--font-different);
-}
-
-.font-md{
-    font-size: 1.3rem;
-}
-
-.font-xmd{
-    font-size: 1.6rem;
 }
 
 .font-bold{
@@ -147,6 +146,49 @@ h4{
 .btn-primary:hover{
     background-color: var(--color-light);
     color: var(--color-primary);
+}
+
+.btn-secondary{
+    color: var(--color-light);
+    background-color: var(--color-secondary);
+    padding: 0.8rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    border: 2px solid var(--color-secondary);
+}
+
+.btn-secondary:hover{
+    background-color: var(--color-light);
+    color: var(--color-secondary);
+}
+
+
+/* sections */
+.container{
+    padding: 20px 20px;
+    margin: 4rem auto;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+    width: 80%;
+    background-color: var(--color-dark);
+    box-shadow: 5px 5px 23px black;
+}
+
+
+/* Gap */
+.gap-top{
+    margin-top: 20px;
+}
+
+.gap-bottom{
+    margin-bottom: 20px;
+}
+
+.gap-y{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
