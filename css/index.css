@@ -39,8 +39,8 @@
     margin-bottom: 15px;
 }
 
-#home-content div{
-    gap: 15px;
+#home-content div button{
+    margin: 0px 10px;
 }
 
 #gallay-images{
