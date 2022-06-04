@@ -1,0 +1,21 @@
+#contact{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contact label{
+    color: var(--color-primary);
+}
+
+#contact input, #contact textarea{
+    margin-top: 10px;
+    background-color: transparent;
+    border-color: var(--color-light);
+    outline-color: var(--color-secondary);
+    color: var(--color-light);
+}
+
+#contact form div button{
+    display: block;
+    width: 100%;
+}

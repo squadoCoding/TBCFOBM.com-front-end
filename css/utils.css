@@ -31,7 +31,9 @@ body{
 p,
 span,
 li,
-a{
+a,
+label,
+input{
     font-family: var(--font-normal);
     font-weight: 500;
 }
@@ -61,6 +63,10 @@ h3{
 
 h4{
     font-size: 1.3rem;
+}
+
+input, textarea{
+    padding: 5px 10px;
 }
 
 .cursor-pointer{
@@ -122,6 +128,14 @@ h4{
 
 .font-bold{
     font-weight: bolder;
+}
+
+.font-md{
+    font-size: 1.3rem;
+}
+
+.font-xmd{
+    font-size: 1.5rem;
 }
 
 
