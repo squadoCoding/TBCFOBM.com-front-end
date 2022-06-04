@@ -195,11 +195,21 @@ h4{
 /* Responcive */
 @media screen and (max-width: 765px) {
     html{
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 519px) {
+    html{
+        font-size: 13px;
+    }
+
+    .container{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 340px) {
     html{
         font-size: 11px;
     }
